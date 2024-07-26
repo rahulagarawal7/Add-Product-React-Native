@@ -1,0 +1,50 @@
+React Native Entry Level - Task
+Create a mobile app that allows users to create and delete the products, display all the
+created products & provide functionality for users to search from the product list.
+1.Login Page - Functionality
+● Login - User would enter Email & Password to login
+○ Email
+○ Password
+○ [Login Button]
+● Use below API for login after successfully login navigate the user to a ‘home page’
+make sure to provide a logout option in the home page
+● Make sure the user can’t access the homepage without login.
+● Once user is logged in, He can’t access login page.
+● Build Login UI Similar to the screenshot attached below. (DO NOT BUILD LOGIN
+WITH GOOGLE)
+API’s to call for Login.
+URL: https://reqres.in/api/login
+METHOD: POST
+BODY:
+{
+"email": "eve.holt@reqres.in",
+"password": "pistol"
+}
+BODY TYPE: JSON
+Postman Response Snapshot
+2. Home Page
+● Home Page will be divided in below sections.
+a. Search Bar
+b. List of all the added product with delete icon.
+c. Add button (Floating action button you need to navigate to a new page in
+order to add a product)
+● Add Product Form
+a. There will be two input box and image option where user can enter product
+name, price and image in order to add product.
+○ Product name
+○ Price
+○ Image
+○ [Add Button]
+● NOTE: Make sure you save the product in “Local Storage”
+○ NOTE: Both name and price are required you need to add form validator for
+validation.
+● NOTE: Also make sure there is no product duplicacy.
+● NOTE: Loading should be there in each api call and error handling also need
+to be implemented, You can show errors in toast or snackbar.
+● Search bar & Product list
+a. Display list of all the added products
+i. When no products is added show a message saying “No Product
+Found”
+ii. Product will be deleted by clicking on the delete icon.
+b. Provide option for user to search products by name from the added products.
+i. Filter product based on the search query

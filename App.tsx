@@ -14,12 +14,12 @@ const App = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-          {/* <Stack.Screen
+        <Stack.Navigator initialRouteName="home">
+          <Stack.Screen
             name="Login"
             component={Login}
             options={{headerShown: false}}
-          /> */}
+          />
           <Stack.Screen
             name="Home"
             component={Home}
